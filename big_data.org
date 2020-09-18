@@ -83,70 +83,66 @@ In this phase, through algorithms we can generate more data and feed our DB stor
   + Summarization
 ** Data presentation
 #+ATTR_REVEAL: :frag fade
-- reports
-- tables
-- graphs
-- decisions
+- Reports
+- Tables
+- Graphs
+- Advice
 ** Process supervision
 #+ATTR_REVEAL: :frag fade
-Revision of process and results.
+Revision of process and results
 * The academic experience
 #+ATTR_REVEAL: :frag fade
-- Characteristics
+- Characteristics:
   - Research process focus to obtain one result
   - Sequential steps, one at a time
   - Minimal resources available
 ** Data acquisition
 #+ATTR_REVEAL: :frag fade
 - Extract-Transform-Load
-  + mainly handcrafted
-  + automated scripts
+  + Mainly handcrafted
+  + Automated scripts
 ** Data storage
 #+ATTR_REVEAL: :frag fade
-- files
-  - csv, xml or similar
+- Files
+  - Formatted files as csv, xml or similar
 - DB
   + Monolitic database
-- file systems
-  + high cost and background needed
+- File systems
+  + Not used because of its high cost and required background
 ** Data analysis
 #+ATTR_REVEAL: :frag fade
   + Centered in statistical tests
   + Offline algorithms
   + Non-parallel algorithms when parallel is possible
-  + Algorithms with distributed data are unnecessary or need high cost and background
+  + Algorithms with distributed data are not essential, plus they need more background and resources
 ** Data presentation
 #+ATTR_REVEAL: :frag fade
-- image based
-  + reports
-  + tables
-  + graphs
-- decisions
-  + advice miss
+- Document-based
+- For decision making, there is no advice
 ** Process supervision
 Human revision of process and results
 * The enterprise experience
 #+ATTR_REVEAL: :frag fade
-- Characteristics
-  - Repeated research process
-  - Resources available with complexity constrains.
-  - Online process, multiple steps at a time.
+- Characteristics:
+  - Research process is repeated
+  - Resources available with complexity constrains
+  - Online process, multiple steps at a time
 ** Data acquisition
 #+ATTR_REVEAL: :frag fade
 - Extract-Transform-Load
   + Mainly automated scripts
-  + Multiple ingestion of data is a must.
+  + Multiple ingestion of data is a must
   + Frameworks
     #+REVEAL_HTML: <img src="spark-logo.png">
     #+REVEAL_HTML: <img src="hadoop-logo.png">
 ** Data storage
 #+ATTR_REVEAL: :frag fade
 - DB
-  + distributed databases
-  + replication in some cases
+  + Distributed databases
+  + Replication in some cases
 ** Data analysis
 *** Offline and online algorithms
-Time series of measurements, entities characteristics updates and forecasting are heavily impact.
+Time series of measurements, entities' characteristics updates and forecasting are heavily impacted.
 #+begin_src ditaa :file offline_online.png :cmdline -E -T -s 2
  +---------+---------+-----+---------+
  | State 1 | State 2 | ... | State n |
@@ -156,7 +152,7 @@ Time series of measurements, entities characteristics updates and forecasting ar
 
 #+end_src
 *** Map-reduce approach (divide and conquer)
-Analysis of huge amount of data is not feasible without data replication and distributed process to perform the analysis.
+Analysis of huge amounts of data is not feasible without data replication and distributed processes
 #+begin_src ditaa :file divide_and_conquer.png :cmdline -E -T -s 2
  +---------------------+-----+----------+       +----------+----------+-----+----------+
  | Feasible :                           |       | Part 1.1 | Part 1.2 | ... | Part 1.k |
@@ -170,32 +166,31 @@ Analysis of huge amount of data is not feasible without data replication and dis
 
 #+end_src
 ** Data presentation
-- system based (mainly web)
-- images generated as requested, image store limited
-- suggested decisions **hype**
+- System-based
+- Documents are generated as requested, because its storage is limited
+- Suggested decisions **(hype)**
 ** Process supervision
-*** human revision of result
-*** automated process
+*** Results are reviewed by humans
+*** Automated process
 #+REVEAL: split
-**** distributed computing and clustering
-+ containers
-+ Virtual Machines
+**** Distributed computing and clustering
++ Containers
++ Virtual machines
 + Raw servers
 #+REVEAL: split
 **** System administration and monitoring
-+ zookeper
-+ k8s
-+ kibana
++ Zookeper
++ Kubernetes
++ Kibana
 #+REVEAL: split
 **** System communication (messaging)
-+ api
-+ kafka
++ Api
++ Kafka
 
 * Conclusion
-*** If the research process need to repeated, be prepare to enhance your knowledge about distributed systems, online/parallel algorithms and frameworks.
+*** If the research process needs to be repeated, be prepared to enhance your knowledge about distributed systems, online/parallel algorithms and frameworks.
 * Questions and Answers
 * Thanks!
-- email: jose.hernandezsal@uanl.edu.mx
-- twitter: @pptashiro
-- Disclaimer
-    This presentation was made with open source projects as emacs, org-mode, org-reveal and ditaa.
+- Email: [[mailto:jose.hernandezsal@uanl.edu.mx][jose.hernandezsal@uanl.edu.mx]]
+- Twitter: [[https://twitter.com/pptashiro][@pptashiro]]
+- Disclaimer: This presentation was put together using open source projects as emacs, org-mode, org-reveal and ditaa.
