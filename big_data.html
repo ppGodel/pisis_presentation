@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>From academic research to enterprise big data</title>
+<meta name="author" content="(José Anastacio Hernández Saldaña)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><H2>From academic research to enterprise big data</H2><H3>José Anastacio Hernández Saldaña</H3><p><a href="mailto:jose.hernandezsal@uanl.edu.mx">jose.hernandezsal@uanl.edu.mx</a></p><p>2020-09-18 Fri 12:00</p>
+</section>
+
+<section>
+<section id="slide-org6188519">
+<h2 id="org6188519">Table of Contents</h2>
+<ul>
+<li><a href="#/slide-org62a969f">The simplified research process</a></li>
+<li><a href="#/slide-org14c2c0d">The academic experience</a></li>
+<li><a href="#/slide-org8e045e7">The enterprise experience</a></li>
+<li><a href="#/slide-orge90fadf">Conclusion</a></li>
+<li><a href="#/slide-orgbccce80">Questions and Answers</a></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org62a969f">
+<h2 id="org62a969f">The simplified research process</h2>
+
+<div class="figure">
+<p><img src="research_process.png" alt="research_process.png" />
+</p>
+</div>
+
+
+
+</section>
+<section id="slide-org1bcb197">
+<h3 id="org1bcb197">Data acquisition</h3>
+<ul class="fragment fade">
+<li><p>
+Extract-Transform-Load
+</p>
+
+<div class="figure">
+<p><img src="etl.png" alt="etl.png" />
+</p>
+</div></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Where the process begins, probably the most heated process, data cleaning.
+Two sources, direct extraction and transfer from already collected data.
+When possible the data is already available, else you have to generate the data through polls, algorithm execution, etc. Then you can transform it and store it.
+</p>
+
+</aside>
+</section>
+<section id="slide-org75bfed2">
+<h3 id="org75bfed2">Data storage</h3>
+<aside class="notes">
+<p>
+The data storage choice impacts directly on how we develop algorithms.
+</p>
+
+</aside>
+<ul class="fragment fade">
+<li>DB</li>
+<li>Files</li>
+<li>File systems</li>
+
+</ul>
+</section>
+<section id="slide-orgf90bcf1">
+<h3 id="orgf90bcf1">Data analysis</h3>
+<aside class="notes">
+<p>
+In this phase, through algorithms we can generate more data and feed our DB storage or find results to present.
+</p>
+
+</aside>
+<ul class="fragment fade">
+<li>Statistical test</li>
+<li>Forecasting</li>
+<li>Data mining
+<ul>
+<li>Anomaly Detection</li>
+<li>Clustering</li>
+<li>Labeling</li>
+<li>Regression</li>
+<li>Summarization</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org66d676d">
+<h3 id="org66d676d">Data presentation</h3>
+<ul class="fragment fade">
+<li>reports</li>
+<li>tables</li>
+<li>graphs</li>
+<li>decisions</li>
+
+</ul>
+</section>
+<section id="slide-org31f820c">
+<h3 id="org31f820c">Process supervision</h3>
+<p class="fragment fade">
+Revision of process and results.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org14c2c0d">
+<h2 id="org14c2c0d">The academic experience</h2>
+<ul class="fragment fade">
+<li>Characteristics
+<ul>
+<li>Research process focus to obtain one result</li>
+<li>Sequential steps, one at a time</li>
+<li>Minimal resources available</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orgeb028b1">
+<h3 id="orgeb028b1">Data acquisition</h3>
+<ul class="fragment fade">
+<li>Extract-Transform-Load
+<ul>
+<li>mainly handcrafted</li>
+<li>automated scripts</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org2598a6e">
+<h3 id="org2598a6e">Data storage</h3>
+<ul class="fragment fade">
+<li>files
+<ul>
+<li>csv, xml or similar</li>
+
+</ul></li>
+<li>DB
+<ul>
+<li>Monolitic database</li>
+
+</ul></li>
+<li>file systems
+<ul>
+<li>high cost and background needed</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orgdac1612">
+<h3 id="orgdac1612">Data analysis</h3>
+<ul class="fragment fade">
+<li>Centered in statistical tests</li>
+<li>Offline algorithms</li>
+<li>Non-parallel algorithms when parallel is possible</li>
+<li>Algorithms with distributed data are unnecessary or need high cost and background</li>
+
+</ul>
+</section>
+<section id="slide-orgfd216c8">
+<h3 id="orgfd216c8">Data presentation</h3>
+<ul class="fragment fade">
+<li>image based
+<ul>
+<li>reports</li>
+<li>tables</li>
+<li>graphs</li>
+
+</ul></li>
+<li>decisions
+<ul>
+<li>advice miss</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org3026502">
+<h3 id="org3026502">Process supervision</h3>
+<p>
+Human revision of process and results
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org8e045e7">
+<h2 id="org8e045e7">The enterprise experience</h2>
+<ul class="fragment fade">
+<li>Characteristics
+<ul>
+<li>Repeated research process</li>
+<li>Resources available with complexity constrains.</li>
+<li>Online process, multiple steps at a time.</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orgf89cda6">
+<h3 id="orgf89cda6">Data acquisition</h3>
+<ul class="fragment fade">
+<li>Extract-Transform-Load
+<ul>
+<li>Mainly automated scripts</li>
+<li>Multiple ingestion of data is a must.</li>
+<li><p>
+Frameworks
+</p>
+<img src="spark-logo.png">
+<img src="hadoop-logo.png"></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orga2fd239">
+<h3 id="orga2fd239">Data storage</h3>
+<ul class="fragment fade">
+<li>DB
+<ul>
+<li>distributed databases</li>
+<li>replication in some cases</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orge29e6a1">
+<h3 id="orge29e6a1">Data analysis</h3>
+<div class="outline-text-3" id="text-orge29e6a1">
+</div>
+</section>
+<section id="slide-org680b497">
+<h4 id="org680b497">Offline and online algorithms</h4>
+<p>
+Time series of measurements, entities characteristics updates and forecasting are heavily impact.
+</p>
+
+<div class="figure">
+<p><img src="offline_online.png" alt="offline_online.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgad70c87">
+<h4 id="orgad70c87">Map-reduce approach (divide and conquer)</h4>
+<p>
+Analysis of huge amount of data is not feasible without data replication and distributed process to perform the analysis.
+</p>
+
+<div class="figure">
+<p><img src="divide_and_conquer.png" alt="divide_and_conquer.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-org12a098b">
+<h3 id="org12a098b">Data presentation</h3>
+<ul>
+<li>system based (mainly web)</li>
+<li>images generated as requested, image store limited</li>
+<li>suggested decisions <b><b>hype</b></b></li>
+
+</ul>
+</section>
+<section id="slide-orga637afe">
+<h3 id="orga637afe">Process supervision</h3>
+<div class="outline-text-3" id="text-orga637afe">
+</div>
+</section>
+<section id="slide-org7a0539b">
+<h4 id="org7a0539b">human revision of result</h4>
+</section>
+<section id="slide-orgd73bca0">
+<h4 id="orgd73bca0">automated process</h4>
+</section>
+<section id="slide-orgd73bca0-split">
+<ul class="org-ul">
+<li><a id="org60b461f"></a>distributed computing and clustering<br />
+<ul>
+<li>containers</li>
+<li>Virtual Machines</li>
+<li>Raw servers</li>
+
+</ul>
+</section>
+<section id="slide-org60b461f-split">
+</li>
+<li><a id="org5085b33"></a>System administration and monitoring<br />
+<ul>
+<li>zookeper</li>
+<li>k8s</li>
+<li>kibana</li>
+
+</ul>
+</section>
+<section id="slide-org5085b33-split">
+</li>
+<li><a id="orgbea9ab7"></a>System communication (messaging)<br />
+<ul>
+<li>api</li>
+<li>kafka</li>
+
+</ul>
+</li>
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orge90fadf">
+<h2 id="orge90fadf">Conclusion</h2>
+<div class="outline-text-2" id="text-orge90fadf">
+</div>
+</section>
+<section id="slide-org777fd38">
+<h4 id="org777fd38">If the research process need to repeated, be prepare to enhance your knowledge about distributed systems, online/parallel algorithms and frameworks.</h4>
+</section>
+</section>
+<section>
+<section id="slide-orgbccce80">
+<h2 id="orgbccce80">Questions and Answers</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgf939ac1">
+<h2 id="orgf939ac1">Thanks!</h2>
+<ul>
+<li>email: jose.hernandezsal@uanl.edu.mx</li>
+<li>twitter: @pptashiro</li>
+<li>Disclaimer
+This presentation was made with open source projects as emacs, org-mode, org-reveal and ditaa.</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t",
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
